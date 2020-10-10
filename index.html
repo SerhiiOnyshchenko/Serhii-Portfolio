@@ -9,6 +9,9 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap&amp;subset=cyrillic"
       rel="stylesheet"
     />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="about">
@@ -17,53 +20,63 @@
         <div class="about-contacts">
           <div class="contacts-titel">Contacts</div>
           <div class="contacts-tel-email">
-            C: <a href="el:380951138598" class="contents-link">+38 095 388 14 47</a>
+            <i class="zmdi zmdi-smartphone-android"></i>
+            <a href="tel:380951138598" class="contents-link">+38 (095) 388 14 47</a>
           </div>
           <div class="contacts-tel-email">
-            E:
+            <i class="zmdi zmdi-email"></i>
             <a href="mailto:VKHellboy1992@gmail.com" class="contents-link"
-              >VKHellboy1992@gmail.com</a
-            >
+              >VKHellboy1992@gmail.com</a>
+          </div>
+          <div class="contacts-tel-email">
+            <i class="zmdi zmdi-github"></i>
+            <a href="https://github.com/SerhiiOnyshchenko" class="contents-link">Github.com/SerhiiOnyshchenko</a>
+          </div>
+          <div class="contacts-tel-email">
+            <i class="zmdi zmdi-facebook"></i>
+            <a href="https://www.facebook.com/OnyshchenkoSerhii" class="contents-link">Facebook.com/OnyshchenkoSerhii</a>
           </div>
         </div>
         <div class="skills">
           <div class="skills-titel">Tech Skills</div>
           <ul class="skills-list">
-            <li><span>HTML5</span></li>
-            <li><span>CSS3</span></li>
-            <li><span>JavaScript</span></li>
-            <li><span>JQuery</span></li>
-            <li><span>SCSS</span></li>
+            <li><span class="list-titel">HTML5</span><span>85%</span></li>
+            <div class="line line-ht"></div>
+            <li><span class="list-titel">CSS3</span><span>80%</span></li>
+            <div class="line line-css"></div>
+            <li><span class="list-titel">JavaScript</span><span>30%</span></li>
+            <div class="line line-js"></div>
+            <li><span class="list-titel">JQuery</span><span>10%</span></li>
+            <div class="line line-jq"></div>
+            <li><span class="list-titel">VSCode</span><span>90%</span></li>
+            <div class="line line-vsc"></div>
+            <li><span class="list-titel">SCSS</span><span>90%</span></li>
+            <div class="line line-scss"></div>
+            <li><span class="list-titel">English</span><span>Intermedia</span></li>
+            
           </ul>
         </div>
-        <div class="skills">
-          <div class="skills-titel">Skills</div>
-            <ul class="skills-list">
-            <li><span>CSS Framework</span></li>
-            <li><span>VSCode</span></li>
-            <li><span>English language</span></li>
-            <li><span>Teamwork</span></li>
-            <li><span>Adaptive layout</span></li>
-        </div>
+        
       </aside>
       <div class="experience">
         <div class="my-info">
-            <div class="my-info-job">Front-End Developer</div>
+            <div class="my-info-job">Junior Front-End Developer</div>
+            <div class="time-work">Type of employment: <span>full time</span></div>
+            <div class="salary">Salary for month: <span>from $500</span></div>
             <div class="my-info-name">Serhii Onyshchenko</div>
-            <div class="my-info-stores">My name is Serhii. I am 27 years old. I from in Pereyaslav, live in Kiev. My hoby is active sports. I have an analytical mind, I am responsible, attentive to details. I have a constant desire to learn new technologies
+            <div class="my-info-stores">My name is Serhii. I am 27 years old. I am from in Pereyaslav, live in Kiev. My hobby is active sports. I have an analytical mind, I am responsible, attentive to details. I have a constant desire to learn new technologies
             and tools. I like to work in a team.  </div>
-
         </div>
           <div class="experience-project">
           <div class="experience-titel">Projects</div>
           <ol class="project-list">
             <li>
-              <a href="https://serhiionyshchenko.github.io/Serhii-Portfolio/">https://serhiionyshchenko.github.io/Serhii-Portfolio/.........................</a>
+              <a href="https://serhiionyshchenko.github.io/Serhii/">https://github.io/Portfolio/......................</a>
               <b>[ <span> HTML5, CSS3</span> ]</b>
             </li>
             <li>
               <a
-                href="https://serhiionyshchenko.github.io/First-Project/">https://serhiionyshchenko.github.io/First-Project/.........................</a>
+                href="https://serhiionyshchenko.github.io/First-Project/">https://github.io/First-Project/..............</a>
               <b>[ <span> HTML5, CSS3, SCSS</span> ]</b>
             </li>
           </ol>
@@ -82,17 +95,7 @@
                     
                 </ul>
             </div>
-            <div class="item">
-                <div class="item-titel">Head of the baking department <span class="orange">Le Silpo</span></div>
-                <div class="item-date-place">September 2012 - February 2016<b>|</b>Ukraine</div>
-                <ul class="item-stores">
-                    <li>
-                        Keeping schedules
-                    </li>
-                    <li>Responsibility</li>
-                    <li>Team management</li>
-                </ul>
-            </div>
+            
             <div class="item">
                 <div class="item-titel">Approver <span class="orange">Mindy Support</span></div>
                 <div class="item-date-place">June 2017 - June 2018<b>|</b>Ukraine</div>
@@ -104,11 +107,22 @@
             </div>
         </div>
         <div class="experience-education">
-            <div class="experience-titel">Education</div>
-            <div class="orange">National Pedagogical Drahomanov University</div>
-            <div class="my-info-job">Sport</div>
-            <div class="item-date-place">Septermber 2009 - June 2014<b>|</b>Ukraine</div>
-
+          <div class="experience-titel">Education</div>
+          <div class="education">
+              <div class="orange">National Pedagogical Drahomanov University</div>
+              <div class="education-job">Institute of Physical Education and Sports</div>
+              <div class="item-date-place">Septermber 2009 - June 2014<b>|</b>Ukraine</div>
+          </div>
+          <div class="education">
+            <div class="orange">Courses Front-End</div>
+            <div class="education-job">Prog Kiev.ua</div>
+            <div class="item-date-place">January 2020<b>|</b>Ukraine</div>
+          </div>
+          <div class="education">
+            <div class="orange">Courses English</div>
+            <div class="education-job">Green Forest</div>
+            <div class="item-date-place">October 2020 - June 2020<b>|</b>Ukraine</div>
+          </div>
         </div>
       </div>
     </div>

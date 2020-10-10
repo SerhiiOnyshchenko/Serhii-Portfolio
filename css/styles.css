@@ -21,22 +21,7 @@ body {
   margin: 0px auto;
 }
 
-@media (max-width: 1200px) {
-  .about {
-    max-width: 970px;
-  }
-}
-@media (max-width: 992px) {
-  .about {
-    max-width: 750px;
-  }
-}
-@media (max-width: 767px) {
-  .about {
-    max-width: none;
-    min-width: 750px;
-  }
-}
+
 .about-header {
   max-width: 370px;
   min-height: 1319px;
@@ -45,7 +30,7 @@ body {
 }
 .about-photo {
   max-width: 370px;
-  height: 354px;
+  max-height: 354px;
   margin-bottom: 55px;
 }
 .about-contacts {
@@ -73,6 +58,13 @@ body {
   text-decoration: none;
   padding-left: 10px;
 }
+.zmdi-smartphone-android{
+  padding: 0 1px 0 2px;
+
+}
+.zmdi-facebook{
+  padding: 0 3px 0 3px;
+}
 .skills {
   padding: 0 0 50px 40px;
 }
@@ -85,16 +77,70 @@ body {
 }
 .skills-list {
   color: #ff6b08;
-  padding-left: 20px;
+  padding: 0 20px;
+  display: inline-block;
+  width: 100%;
+
+
+}
+.skills-list li{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
-aside ul li span {
+.list-titel {
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
+.list-titel::before{
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #ff6b08;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 9px;
+  left: -14px;
 
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  margin: 5px 0 20px 0;
+  background-color: #ff6b08;
+  position: relative;
+}
+.line::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  display: block;
+  height: 2px;
+  background-color: #fff;
+}
+.line-ht::after{
+  width: 15%;
+}
+.line-css::after{
+  width: 20%;
+}
+.line-js::after{
+  width: 70%;
+}
+.line-jq::after{
+  width: 90%;
+}
+.line-vsc::after{
+  width: 10%;
+}
+.line-scss::after{
+  width: 10%;
+}
 .experience {
   font-size: 14px;
   padding-top: calc(40px + 40 * (100vw / 1200));
@@ -102,13 +148,28 @@ aside ul li span {
   color: #000000;
 }
 .my-info {
-  height: 280px;
   max-width: 480px;
+  padding-bottom: 20px;
 }
 .my-info-job {
   font-size: 16px;
   font-weight: 700;
-  line-height: 24px;
+}
+.time-work{
+  margin: 10px 0 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+} 
+.time-work span{
+  color: #ff6b08;
+}
+.salary{
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.salary span{
+  color: #ff6b08;
 }
 .my-info-name {
   font-size: calc(14px + 24 * (80vw / 1200));
@@ -150,9 +211,13 @@ ol li span {
   line-height: 24px;
   letter-spacing: 0.42px;
 }
-
+div b {
+  color: #000000;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 .experience-item {
-  height: 570px;
+  padding-bottom: 40px;
 }
 .item {
   padding-bottom: 25px;
@@ -179,8 +244,57 @@ ol li span {
   padding-left: 20px;
 }
 
-div b {
-  color: #000000;
+.education{
+  padding-bottom: 20px;
+}
+
+.education-job{
+font-size: 15px;
+  font-weight: 600;
   padding-left: 5px;
-  padding-right: 5px;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    max-width: 970px;
+  }
+  .experience{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body{
+    padding: 20px;
+  }
+  .about {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 370px;
+  }
+  .about-header{
+    min-height: 100%;
+  }
+  .experience{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 424px){
+body{
+  padding: 5px;
+}
+.about-photo{
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.about-contacts{
+  padding: 0 0 30px 20px;
+}
+.skills{
+    padding: 0 0 30px 20px;
+
+}
 }
