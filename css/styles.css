@@ -21,12 +21,22 @@ body {
   margin: 0px auto;
 }
 
-
+.language{
+  font-weight: 600;
+  padding: 0 0 10px 10px;
+}
+.language a{
+  color: #ff6b08;
+  text-decoration: none;
+}
+.language a:hover{
+  text-shadow:  0 0 5px #fff;
+}
 .about-header {
   max-width: 370px;
   min-height: 1319px;
   background-color: #1e2939;
-  padding-top: 40px;
+  padding-top: 10px;
 }
 .about-photo {
   max-width: 370px;
