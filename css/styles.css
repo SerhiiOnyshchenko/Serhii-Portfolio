@@ -140,10 +140,13 @@ body {
   width: 20%;
 }
 .line-js::after{
-  width: 70%;
+  width: 50%;
 }
-.line-jq::after{
-  width: 90%;
+.line-ra::after{
+  width: 40%;
+}
+.line-rd::after{
+  width: 40%;
 }
 .line-vsc::after{
   width: 10%;
